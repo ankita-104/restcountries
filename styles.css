@@ -1,0 +1,49 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+
+.nav-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: black;
+    color: white;
+    align-items: center;
+    
+}
+.Logo{
+    position: absolute;
+    left: 10px;
+}
+
+
+.nav-flags{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: grey;
+    color:black;
+    
+    
+}
+.flag{
+    padding: 1%;
+}
+a{
+    text-decoration: none;
+    padding: 1% 2%;
+}
+.flag:hover{
+    background-color: black;
+}
+
+@media (max-width:500px) {
+    .nav-flags{
+        display: flex;
+        justify-content: center;
+    }
+}

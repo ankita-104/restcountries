@@ -9,6 +9,9 @@
 }
 
 /* Body */
+body{
+    background-image: url(Images/bg.jpg) ;
+}
 /*navbar css*/
 #navbar {
     display: flex;
@@ -215,6 +218,12 @@
     border-radius: 2px;
     transform: scale(1.5);
     animation-delay: inherit;
+}
+
+/* Footer */
+.footer-text{
+    color:#fff;
+    text-align: center;
 }
 
 

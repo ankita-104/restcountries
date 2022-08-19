@@ -1,87 +1,114 @@
 * {
-    box-sizing: border-box;
-    /* background-color: rgb(84, 12, 84); */
+    margin: 0px;
+    padding: 0px;
 }
 
-body {
-    margin: 0;
-    background-color: rgb(113, 157, 195);
+/* css variables */
+:root {
+    --navbar-height: 59px;
 }
 
-.nav-header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    /* background-color: black; */
-    color: white;
-    align-items: center;
-    background: #276b7c;
-    background-image: -webkit-linear-gradient(top, #1b528d, #27457d);
-    background-image: -moz-linear-gradient(top, #1c505d, #74276c);
-    background-image: -ms-linear-gradient(top, #42899b, #621f5b);
-    
-
-
-}
-
-
-
-
-.Logo {
-    position: absolute;
-    left: 1rem;
-    
-    /* /* background-color: rgb(5, 4, 4);  */
-}
- 
-.Logo img{
-  position: relative;
-  width:20%;
-  height: 20%;
- 
-}
-
-.nav-flags {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-    /* background-color: #1b528d;  */
-    background-image: -webkit-linear-gradient(top, #27457d, #27457d);
-    
-    color: black;
-    
-}
-
-
-.flag {
-    
-    padding: 1%;
-    background-color: #27457d;
-    font-size: 2rem ;
+/*navbar css*/
+#navbar {
     display: flex;
     align-items: center;
-    justify-content: center;
-    
-    
+    position: relative;
 }
 
-a{
-    text-decoration: none;
-    padding: 1% 2%;
-}
-
-.flag:hover {
+#navbar::before {
+    content: "";
     background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
 }
 
-.nav-heading{
-   color: #1e262f;
-   font-size: 3em;
-   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-   
-
+#logo {
+    margin: 9px 19px;
 }
+
+#logo img {
+    margin: 2px 3px;
+    height: 56px;
+}
+
+#navbar ul {
+    display: flex;
+    margin-left: 220px;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a {
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    color: black;
+    background-color: white;
+}
+
+#navbar h2 {
+    color: white;
+    margin-left: 100px;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#navbar h2:hover {
+    color: crimson;
+}
+
+/*navbar css ends*/
+/*home section*/
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    top: 0px;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+}
+
+#home::before {
+    content: "";
+    background: url('/bg.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.88;
+}
+
+.h-primary {
+    font-size: 2.8rem;
+    /*utility class*/
+    padding: 12px;
+    margin-top: 5rem;
+}
+
+#home h1 {
+    color: white;
+    text-align: center;
+}
+
+#home p {
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+}
+
 
 
 /* body  */
@@ -89,20 +116,21 @@ a{
 /* body background  */
 .countries {
     content: "";
-
+    position: relative;
     z-index: -2;
     opacity: 0.98;
     border-radius: 10px;
 
     background: #276b7c;
-    background-image: -webkit-linear-gradient(top,#27457d, #7d2775);
+    background-image: -webkit-linear-gradient(top, #27457d, #7d2775);
     background-image: -moz-linear-gradient(top, #1c505d, #74276c);
     background-image: -ms-linear-gradient(top, #42899b, #621f5b);
 }
+
 /* head  */
-#head{
-   text-align: center;
-   padding: 2% 5% ;
+#head {
+    text-align: center;
+    padding: 2% 5%;
 }
 
 
@@ -116,7 +144,7 @@ a{
     padding-right: 5em;
     padding-top: 15em;
     margin: 0;
-  
+
 }
 
 .country2 {
@@ -151,42 +179,47 @@ a{
     padding: 0.7em;
     border-radius: 2px;
     transform: scale(1.5);
-   animation-delay: inherit;
+    animation-delay: inherit;
 }
 
 
 
 
 @media (max-width:500px) {
-    .nav-header{
+    .nav-header {
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
     }
-   
+
     .nav-flags {
         display: flex;
         justify-content: center;
     }
-    .country1{
+
+    .country1 {
         display: flex;
         flex-direction: column;
     }
-    .country2{
+
+    .country2 {
         display: flex;
         flex-direction: column;
     }
-    .country3{
+
+    .country3 {
         display: flex;
         flex-direction: column;
     }
-    .countries{
+
+    .countries {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
         justify-content: center;
     }
-    h3{
+
+    h3 {
         text-align: center;
     }
 }

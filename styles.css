@@ -44,12 +44,22 @@
     font-size: 1.3rem;
 }
 
+
 #navbar ul li a {
     color: white;
     display: block;
     padding: 3px 22px;
     border-radius: 20px;
     text-decoration: none;
+
+ 
+.Logo img{
+  position: relative;
+  width:20%;
+  height: 20%;
+  border-radius:10px;
+ 
+
 }
 
 #navbar ul li a:hover {
@@ -128,9 +138,20 @@
 }
 
 /* head  */
+
 #head {
     text-align: center;
     padding: 2% 5%;
+
+#head{
+   text-align: center;
+   padding: 2% 5% ;
+   background-color:#440e3e ;
+   position: absolute;
+   left: 40%;
+   border-radius: 16px;
+   
+
 }
 
 

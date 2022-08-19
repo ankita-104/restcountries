@@ -7,6 +7,10 @@
 :root {
     --navbar-height: 59px;
 }
+/* Body */
+body{
+    background-image: url(Images/bg.jpg);
+}
 
 /*navbar css*/
 #navbar {
@@ -51,6 +55,7 @@
     padding: 3px 22px;
     border-radius: 20px;
     text-decoration: none;
+}
 
  
 .Logo img{
@@ -92,7 +97,7 @@
 
 #home::before {
     content: "";
-    background: url('/bg.jpg') no-repeat center center/cover;
+    background: url('Images/bg.jpg') no-repeat center center/cover;
     position: absolute;
     height: 100%;
     width: 100%;
@@ -142,6 +147,7 @@
 #head {
     text-align: center;
     padding: 2% 5%;
+}
 
 #head{
    text-align: center;
@@ -207,15 +213,10 @@
 
 
 @media (max-width:500px) {
-    .nav-header {
+    .navbar{
         display: flex;
-        flex-wrap: wrap;
         flex-direction: column;
-    }
-
-    .nav-flags {
-        display: flex;
-        justify-content: center;
+        flex-wrap: wrap;
     }
 
     .country1 {

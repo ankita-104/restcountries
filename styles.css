@@ -26,18 +26,19 @@ body {
 
 
 
+
 .Logo {
     position: absolute;
-    left: 1em;
+    left: 1rem;
     
-    /* background-color: rgb(5, 4, 4); */
+    /* /* background-color: rgb(5, 4, 4);  */
 }
  
-.logo img{
+.Logo img{
   position: relative;
-  padding-top: 2em;
-  height: 13em;
-  width: 11em;
+  width:20%;
+  height: 20%;
+ 
 }
 
 .nav-flags {
@@ -45,17 +46,23 @@ body {
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
-    /* background-color: #1b528d; */
+    /* background-color: #1b528d;  */
     background-image: -webkit-linear-gradient(top, #27457d, #27457d);
     
     color: black;
     
 }
 
+
 .flag {
+    
     padding: 1%;
     background-color: #27457d;
-    font-size: 2em ;
+    font-size: 2rem ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
     
 }
 
@@ -94,9 +101,11 @@ a{
 }
 /* head  */
 #head{
-    position: relative;
-    align-items: center;
+   text-align: center;
+   padding: 2% 5% ;
 }
+
+
 
 /* country background alignment  */
 .country1 {
@@ -106,6 +115,7 @@ a{
     padding-left: 7em;
     padding-right: 5em;
     padding-top: 15em;
+    margin: 0;
   
 }
 
@@ -145,9 +155,38 @@ a{
 }
 
 
+
+
 @media (max-width:500px) {
+    .nav-header{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+   
     .nav-flags {
         display: flex;
         justify-content: center;
+    }
+    .country1{
+        display: flex;
+        flex-direction: column;
+    }
+    .country2{
+        display: flex;
+        flex-direction: column;
+    }
+    .country3{
+        display: flex;
+        flex-direction: column;
+    }
+    .countries{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    h3{
+        text-align: center;
     }
 }

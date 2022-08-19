@@ -38,6 +38,7 @@ body {
   position: relative;
   width:20%;
   height: 20%;
+  border-radius:10px;
  
 }
 
@@ -103,6 +104,11 @@ a{
 #head{
    text-align: center;
    padding: 2% 5% ;
+   background-color:#440e3e ;
+   position: absolute;
+   left: 40%;
+   border-radius: 16px;
+   
 }
 
 

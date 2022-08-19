@@ -7,11 +7,8 @@
 :root {
     --navbar-height: 59px;
 }
-/* Body */
-body{
-    background-image: url(Images/bg.jpg);
-}
 
+/* Body */
 /*navbar css*/
 #navbar {
     display: flex;
@@ -30,7 +27,7 @@ body{
     width: 100%;
     /* z-index: 0; */
     /* opacity: 0.4; */
-/* } */ */
+/* } */ 
 
 #logo {
     margin: 9px 19px;
@@ -62,16 +59,6 @@ body{
     padding: 3px 22px;
     border-radius: 20px;
     text-decoration: none;
-}
-
- 
-.Logo img{
-  position: relative;
-  width:20%;
-  height: 20%;
-  border-radius:10px;
- 
-
 }
 
 #navbar ul li a:hover {
@@ -166,8 +153,18 @@ body{
    left: 40%;
    border-radius: 16px;
    margin-bottom:100px;
+}
    
-   
+
+#head {
+    text-align: center;
+    padding: 2% 5%;
+    background-color: #440e3e;
+    position: absolute;
+    left: 40%;
+    border-radius: 16px;
+
+
 
 }
 
@@ -224,11 +221,14 @@ body{
 
 
 @media (max-width:500px) {
+
     #home{
         display: flex;
         justify-content: center;
     }
     #navbar{
+
+
         display: flex;
         flex-direction: column;
         justify-content: center;

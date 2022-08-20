@@ -31,10 +31,19 @@ h4{
 
 
 
+/* #logo img {
+    margin: 2px 3px;
+    height: 56px;
+} */
 #logo img {
     margin: 2px 3px;
     height: 56px;
+    position: relative;
+    height: 7rem ;
+    width: 7rem ;
 }
+
+
 #navbar{
     display: flex;
     justify-content: space-between;
@@ -147,8 +156,15 @@ h4{
 
 }
 
+.country img {
+
+    position: relative ;
+    height: 4rem ;
+    width: 4rem;
+}
+
 .country:hover {
-    opacity: 0.4;
+    opacity: 0.7;
     padding: 0.7rem;
     border-radius: 2px;
     transform: scale(1.5);

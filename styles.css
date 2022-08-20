@@ -178,28 +178,43 @@ body{
     padding: 12px 23px;
     margin: 2px 2px;
     background-color: black;
+    margin: 65px auto;
+}
+.items p{
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+.items img{
+    width: fit-content;
 }
 #country1{
     grid-area: country1;
     background-image: url(Images/japan.jpg);
+    background-size: cover;
 }
 
 #country2{
     grid-area: country2;
     background: url(Images/usa.jpg);
+    background-size: cover;
 }
 #country3{
     grid-area: country3;
     background: url(Images/peru.jpg);
+    background-size: cover;
 }
 #country4{
     grid-area: country4;
     background: url(Images/india.jpg);
+    background-size: cover;
 }
 #country5{
     grid-area: country5;
     background: url(Images/sk.jpg);
+    background-size: cover;
 }
+
+
 
 
 /* Footer */

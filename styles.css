@@ -79,6 +79,9 @@ body{
 #navbar h2:hover {
     color: crimson;
 }
+.navbar-heading-element{
+    font-size: 1.3rem;
+}
 
 /*navbar css ends*/
 /*home section*/

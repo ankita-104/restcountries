@@ -78,6 +78,9 @@ body{
 #navbar h2:hover {
     color: crimson;
 }
+.navbar-heading-element{
+    font-size: 1.3rem;
+}
 
 /*navbar css ends*/
 /*home section*/
@@ -145,41 +148,20 @@ body{
 
 /* head  */
 
-#head {
-    text-align: center;
-    padding: 2% 5%;
-}
-
 #head{
    text-align: center;
+   width: 33%;
    padding: 2% 5% ;
    background-color:#440e3e ;
-   position: absolute;
-   left: 40%;
+   margin-left: 2x;
    border-radius: 16px;
+   margin-top: 100px;
    margin-bottom:100px;
 }
-   
-
-#head {
-    text-align: center;
-    padding: 2% 5%;
-    background-color: #440e3e;
-    position: absolute;
-    left: 40%;
-    border-radius: 16px;
-
-
-
-}
-
-
-
-/* country background alignment  */
-.country1 {
-    display: flex;
-    flex-direction: row;
+.heading{
+    display: inline-block;
     justify-content: center;
+
     padding-left: 7rem;
     padding-right: 5rem;
     padding-top: 15rem;
@@ -224,7 +206,66 @@ body{
  h4{
     color: #fff;
     text-align: center;
+
+
+    align-items: center;
+    width: 50%;
+    margin-left: 580px;
 }
+
+.container{
+    display: grid;
+    grid-gap: 1rem;
+    margin-top: 100px;
+    grid-template-areas: 
+    'country1 country2'
+    'country3 country4'
+    'country5 country5';
+}
+.items{
+    color: black;
+    padding: 12px 23px;
+    margin: 2px 2px;
+    background-color: black;
+    margin: 65px auto;
+}
+.items p{
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+.items img{
+    width: fit-content;
+}
+#country1{
+    grid-area: country1;
+    background-image: url(Images/japan.jpg);
+    background-size: cover;
+}
+
+#country2{
+    grid-area: country2;
+    background: url(Images/usa.jpg);
+    background-size: cover;
+}
+#country3{
+    grid-area: country3;
+    background: url(Images/peru.jpg);
+    background-size: cover;
+}
+#country4{
+    grid-area: country4;
+    background: url(Images/india.jpg);
+    background-size: cover;
+}
+#country5{
+    grid-area: country5;
+    background: url(Images/sk.jpg);
+    background-size: cover;
+}
+
+
+
+
 
 /* Footer */
 .footer-text{

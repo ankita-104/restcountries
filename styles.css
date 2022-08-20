@@ -4,14 +4,24 @@
    box-sizing: border-box;
 }
 
-/* css variables */
 
 
-/* Body */
+
+
 body{
     background-image: url(Images/bg.jpg) ;
 }
-/*navbar css*/
+h4{
+    color: #fff;
+    text-align: center;
+
+
+    align-items: center;
+    width: 50%;
+    margin-left: 580px;
+}
+/* Nav-Bar */
+
 #navbar {
     display: flex;
     align-items: center;
@@ -29,11 +39,6 @@ body{
     display: flex;
     justify-content: space-between;
 }
-
-
-
-
-
 
 #navbar  .list-flags {
     color: white;
@@ -68,10 +73,15 @@ body{
 
 .navbar-heading-element{
     font-size: 2rem;
+    width: fit-content;
 }
 
-/*navbar css ends*/
-/*home section*/
+
+
+
+/*Home section*/
+
+
 #home {
     
     display: flex;
@@ -94,6 +104,9 @@ body{
     /*utility class*/
     padding: 12px;
     margin-top: 2rem;
+   
+    outline: none;
+    animation: animate 5s linear infinite;
 }
 
 #home h1 {
@@ -112,30 +125,9 @@ body{
 
 
 
-#head{
-   text-align: center;
-   width: 33%;
-   padding: 2% 5% ;
-   background-color:#440e3e ;
-   margin-left: 2x;
-   border-radius: 16px;
-   margin-top: 100px;
-   margin-bottom:100px;
-}
-.heading{
-    display: inline-block;
-    justify-content: center;
-
-    padding-left: 7rem;
-    padding-right: 5rem;
-    padding-top: 15rem;
-    margin: 0;
-
-}
 
 
-
-/* each country prop  */
+/* Countries */
 .Countries-heading{
      color: #fff;
      text-align: center;
@@ -162,27 +154,6 @@ body{
     transform: scale(1.5);
     animation-delay: inherit;
 }
- h4{
-    color: #fff;
-    text-align: center;
-
-
-    align-items: center;
-    width: 50%;
-    margin-left: 580px;
-}
-
-.container{
-    padding: 5% 10%;
-    display: grid;
-    grid-gap: 1rem;
-    margin-top: 100px;
-    justify-content: space-evenly;
-    grid-template-areas: 
-    'country1 country2'
-    'country3 country4'
-    'country5 country5';
-}
 .items{
     color: black;
     padding: 12px 23px;
@@ -197,6 +168,20 @@ body{
 .items img{
     width: fit-content;
 }
+
+
+.container{
+    padding: 5% 10%;
+    display: grid;
+    grid-gap: 1rem;
+    margin-top: 100px;
+    justify-content: space-evenly;
+    grid-template-areas: 
+    'country1 country2'
+    'country3 country4'
+    'country5 country5';
+}
+
 #country1{
     grid-area: country1;
     background-image: url(Images/japan.jpg);
@@ -234,6 +219,8 @@ body{
     text-align: center;
     
 }
+
+
 
 
 
@@ -303,4 +290,23 @@ body{
     }
    
     
+}
+
+@keyframes animate
+{
+    0%,18%,50.1%,60%,65.1%,80%,90.1%,92%
+    {
+        color: #0e3742;
+        text-shadow: none;
+    }
+    18.1%,20.1%,30%,50%,60.1%,65%,80.1%,90%,100%
+    {
+        color:#fff;
+        text-shadow:0 0 10px #000,
+        0 0 20px #000,
+        0 0 40px #000,
+        0 0 80px #000,
+        0 0 160px #000;
+
+    }
 }

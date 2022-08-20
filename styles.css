@@ -4,9 +4,7 @@
 }
 
 /* css variables */
-:root {
-    --navbar-height: 59px;
-}
+
 
 /* Body */
 body{
@@ -21,19 +19,7 @@ body{
     opacity: 0.8;
 }
 
-/* #navbar::before {
-    content: "";
-    background-color: black;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    /* z-index: 0; */
-    /* opacity: 0.4; */
-/* } */ 
 
-/* #logo {
-    /* margin: 9px 19px; */
-/* } */
 
 #logo img {
     margin: 2px 3px;
@@ -130,23 +116,7 @@ body{
 
 
 
-/* body  */
 
-/* body background  */
-.countries {
-    content: "";
-    position: relative;
-    /* z-index: 0; */
-    opacity: 0.98;
-    border-radius: 10px;
-
-    /* background: #276b7c;
-    background-image: -webkit-linear-gradient(top, #27457d, #7d2775);
-    background-image: -moz-linear-gradient(top, #1c505d, #74276c);
-    background-image: -ms-linear-gradient(top, #42899b, #621f5b); */
-}
-
-/* head  */
 
 #head{
    text-align: center;
@@ -169,34 +139,19 @@ body{
 
 }
 
-.country2 {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding-left: 7rem;
-    padding-right: 5rem;
-    padding-top: 5rem;
-}
 
-.country3 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 5rem;
-}
 
 /* each country prop  */
 .country {
     /* display: ; */
-    padding: 3rem;
+    padding: 48px;
     opacity: 0.9;
-    width: 25rem;
-    height: 25rem;
+    width: 300px;
+    height: 300px;
 
 }
 
 .country:hover {
-
     opacity: 0.4;
     padding: 0.7rem;
     border-radius: 2px;
@@ -277,14 +232,12 @@ body{
 
 
 @media (max-width:500px) {
-
+/* 
     #home{
         display: flex;
         justify-content: center;
-    }
-    #navbar ul{
-        text-align: center;
-    }
+    } */
+   
     #navbar{
 
 
@@ -295,7 +248,7 @@ body{
         justify-content: space-evenly;
         width: 100%;
 
-        /* flex-wrap: wrap; */
+        
     }
 
     .list-flags{
@@ -311,35 +264,12 @@ body{
         align-items: center;
         justify-content: center;
     }
-    .countries{
+    
+    .container{
         display: flex;
+        flex-direction: column;
         justify-content: center;
-    }
-
-    .country1 {
-        display: flex;
-        flex-direction: column;
-        padding: 10%;
-    }
-
-    .country2 {
-        display: flex;
-        flex-direction: column;
-        padding: 10%;
-    }
-
-    .country3 {
-        display: flex;
-        flex-direction: column;
-        padding: 10%;
-    }
-
-    .countries {
-        display: flex;
-        flex-direction: column;
-        /* flex-wrap: wrap; */
-        justify-content: center;
-        padding: 10%;
+        align-items: center;
     }
 
     h3 {

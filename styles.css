@@ -1,4 +1,6 @@
 * {
+    margin: 0;
+    border: 0;
    box-sizing: border-box;
 }
 
@@ -25,7 +27,7 @@ body{
 }
 #navbar{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 

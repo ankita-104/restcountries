@@ -154,16 +154,18 @@ h4{
     transform: scale(1.5);
     animation-delay: inherit;
 }
-.items{
+.country{
     color: black;
     padding: 12px 23px;
     margin: 2px 2px;
     background-color: black;
     margin: 65px auto;
 }
-.items p{
-    font-size: 1.4rem;
+.country p{
+    font-size: 1.6rem;
     font-weight: bold;
+    font-weight: 900;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .items img{
     width: fit-content;
@@ -287,6 +289,9 @@ h4{
     .country{
         width: 300px;
         height: 300px;
+    }
+    .country p{
+        font-size: 1rem;
     }
    
     
